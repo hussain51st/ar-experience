@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR.js GIF Example</title>
+    <!-- Include AR.js and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@jeromeetienne/ar.js/three.js"></script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jeromeetienne/ar.js/aframe-gif-component.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- AR.js scene -->
+    <a-scene embedded arjs>
+        <!-- AR.js marker -->
+        <a-marker preset="hiro">
+            <!-- GIF -->
+            <a-gif src="https://i.postimg.cc/GpT5fCxV/glow-eid.gif" width="1" height="1" position="0 0 0"></a-gif>
+        </a-marker>
+        <!-- Define camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
